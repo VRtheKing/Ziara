@@ -43,7 +43,7 @@ const Invitations = () => {
     const templateParams = {
       to_email: participant.email,
       to_name: participant.name,
-      from_name: "Ziara", // Replace with your company or dynamic value
+      from_name: "Ziara",
       message: `Hello ${participant.name}, this is your invitation message.`,
     };
 

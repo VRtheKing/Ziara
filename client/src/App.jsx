@@ -15,7 +15,6 @@ import Invitations from "./pages/Dashboard/Invitations";
 import ParcitipantPage from "./pages/ParticipantPage";
 
 function App() {
-  // Sample data for events
   const events = [
     {
       id: 1,
@@ -41,8 +40,6 @@ function App() {
       time: "4:00 PM - 6:00 PM",
     },
   ];
-
-  // Event card component
   const EventCard = ({ event }) => (
     <div className="bg-white shadow-md rounded-lg p-4 mb-4">
       <h3 className="text-2xl font-bold text-customBlue mb-2">{event.title}</h3>

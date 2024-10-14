@@ -30,7 +30,7 @@ const ParticipantRegistrationForm = () => {
     const fetchEventName = async () => {
       try {
         const response = await axios.get(`/api/events/events/${eventId}`);
-        setEventName(response.data.title); // Assuming response.data contains event title
+        setEventName(response.data.title);
       } catch (error) {
         console.error("Error fetching event details:", error);
       }
@@ -76,7 +76,7 @@ const ParticipantRegistrationForm = () => {
     try {
       const response = await axios.post("/api/participants/create/", {
         ...formData,
-        eventId, // Include eventId in the form submission
+        eventId, 
       });
       setFormData({
         name: "",
@@ -84,7 +84,7 @@ const ParticipantRegistrationForm = () => {
         phone: "",
         text: "",
       });
-      // Implement your form submission logic here
+      
       console.log(formData);
       toast.success("Registration successful!");
     } catch (error) {
